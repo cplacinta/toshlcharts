@@ -1,6 +1,6 @@
-package com.placinta;
+package com.placinta.toshlcharts.dao;
 
-import com.placinta.toshlcharts.User;
+import com.placinta.toshlcharts.model.User;
 
 public interface UserDao {
   void insert(User user);

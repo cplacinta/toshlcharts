@@ -1,4 +1,4 @@
-package com.placinta.toshlcharts;
+package com.placinta.toshlcharts.model;
 
 public class User
 {

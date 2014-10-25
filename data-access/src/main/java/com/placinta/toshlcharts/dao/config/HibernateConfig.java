@@ -1,4 +1,4 @@
-package com.placinta.resources;
+package com.placinta.toshlcharts.dao.config;
 
 import java.util.Properties;
 import javax.annotation.Resource;

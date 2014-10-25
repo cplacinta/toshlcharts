@@ -1,14 +1,7 @@
 package com.placinta.toshlcharts;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
-import javax.servlet.ServletException;
+import com.placinta.toshlcharts.service.UserService;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.PrintWriter;
-import java.sql.*;
 
 //@Component
 public class SaveUser extends HttpServlet {

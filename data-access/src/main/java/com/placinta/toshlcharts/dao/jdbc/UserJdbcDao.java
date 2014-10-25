@@ -1,13 +1,12 @@
 package com.placinta.toshlcharts.dao.jdbc;
 
+import com.placinta.toshlcharts.dao.UserDao;
+import com.placinta.toshlcharts.model.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.sql.DataSource;
-
-import com.placinta.UserDao;
-import com.placinta.toshlcharts.User;
 import org.springframework.stereotype.Repository;
 
 @Repository
