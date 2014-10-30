@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class FormLogin {
 
-  @Autowired private UserService userService;
+  @Autowired
+  private UserService userService;
 
   @RequestMapping(value = {"/login"}, method = {RequestMethod.POST})
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -27,18 +28,20 @@ public class FormLogin {
 
     String username = request.getParameter("username");
     String password = encrypt(request.getParameter("password"));
-    out.println("User: " + username);
-    out.println("password: " + password);
-    out.flush();
 
 
     if (userService != null) {
       User user = userService.getUser(username, password);
 
       if (user == null) {
-        response.sendRedirect("index");
+        response.sendRedirect("index.jsp");
+        return;
       }
     }
+    out.println("User: " + username);
+    out.println("password: " + password);
+    out.flush();
+
 
     /*try {
       out.println("Password: " + encrypt(password) );

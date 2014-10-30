@@ -1,24 +1,23 @@
 package com.placinta.toshlcharts.model;
 
-public class User
-{
-
-  private int Id;
+public class User {
+  
+  private int id;
   private String userName;
   private String password;
 
-  public User(int id, int userName, int password) {
-
+  public User(int id, String userName, String password) {
+    this.id = id;
+    this.userName = userName;
+    this.password = password;
   }
 
-
-  //getter and setter methods
   public int getId() {
-    return Id;
+    return id;
   }
 
   public void setId(int id) {
-    this.Id = id;
+    this.id = id;
   }
 
   public String getUserName() {

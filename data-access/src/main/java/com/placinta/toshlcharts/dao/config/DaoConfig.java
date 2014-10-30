@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 @PropertySource("classpath:database.properties")
-public class HibernateConfig {
+public class DaoConfig {
 
   private static final String DATABASE_DRIVER_PROPERTY_NAME = "db.driver";
   private static final String DATABASE_URL_PROPERTY_NAME = "db.url";

@@ -17,12 +17,11 @@ public class UserService {
   @Autowired
   private UserDao userDao;
 
-  public void saveUser(User user) {
-    userDao.insert(user);
+  public User saveUser(String username, String password) {
+    return userDao.insert(username,password);
   }
 
   public User getUser(String username, String password) {
-    System.out.println("In Service");
     return userDao.getUser(username, password);
   }
 

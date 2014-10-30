@@ -11,9 +11,9 @@ USE diacritics;
 DROP TABLE IF EXISTS users;
 
 # Create  table users
-CREATE TABLE `users` (
+CREATE TABLE users (
   id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  username VARCHAR(45) NOT NULL,
+  username VARCHAR(45) NOT NULL UNIQUE,
   password VARCHAR(45) NOT NULL,
   PRIMARY KEY  (id)
 );
