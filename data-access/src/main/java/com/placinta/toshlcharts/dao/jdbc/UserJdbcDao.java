@@ -38,7 +38,6 @@ public class UserJdbcDao implements UserDao {
     } catch (SQLException e) {
       throw new RuntimeException(e);
     }
-
   }
 
   @Override

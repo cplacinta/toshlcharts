@@ -14,22 +14,22 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @Controller
-public class SaveUser {
+public class RegistrationController {
 
   @Autowired
   private UserService userService;
 
   @RequestMapping(value = {"/save"}, method = {RequestMethod.POST})
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    response.setContentType("text/html");
-    PrintWriter out = response.getWriter();
-
     String username = request.getParameter("username");
     String password = (request.getParameter("password"));
 
     try {
       User user = userService.saveUser(username, password);
+      //TODO: print user details
     } catch (RuntimeException e) {
+
+      //TODO: catch custom user exception
       response.sendRedirect("index.jsp");
     }
 

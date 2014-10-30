@@ -18,10 +18,12 @@ public class UserService {
   private UserDao userDao;
 
   public User saveUser(String username, String password) {
+    //encrypt password
     return userDao.insert(username,password);
   }
 
   public User getUser(String username, String password) {
+    //encrypt password
     return userDao.getUser(username, password);
   }
 
