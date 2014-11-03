@@ -3,8 +3,8 @@
 echo $PROJECT_DB_PASSWORD
 mysql -v --auto-rehash --host="$PROJECT_DB_HOST" --password="$PROJECT_DB_PASSWORD" --user web <<EOF
 
-# Select toshl_chart database
-USE diacritics;
+# Select toshl_charts database
+USE toshl_charts;
 
 # Drop all tables
 

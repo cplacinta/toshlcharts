@@ -1,4 +1,4 @@
-package com.placinta.toshlcharts;
+package com.placinta.toshlcharts.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
