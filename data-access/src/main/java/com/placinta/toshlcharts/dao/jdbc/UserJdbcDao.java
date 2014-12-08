@@ -3,16 +3,14 @@ package com.placinta.toshlcharts.dao.jdbc;
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 import com.placinta.toshlcharts.dao.UserDao;
 import com.placinta.toshlcharts.model.User;
-
+import com.placinta.toshlcharts.model.UserExistsException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import javax.sql.DataSource;
-
-import com.placinta.toshlcharts.model.UserExistsException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
 @Repository
 public class UserJdbcDao implements UserDao {

@@ -12,7 +12,7 @@
   <url>https://github.com/cplacinta/toshlcharts</url>
 
   <properties>
-    <spring.version>4.0.5.RELEASE</spring.version>
+    <spring.version>4.0.6.RELEASE</spring.version>
   </properties>
 
   <modules>

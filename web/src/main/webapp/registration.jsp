@@ -6,7 +6,7 @@
         <title>Registration</title>
     </head>
     <body>
-        <form method="post" action="save">
+        <form method="post" action="register">
             <center>
             <table border="1" width="30%" cellpadding="5">
                 <thead>
